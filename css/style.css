@@ -64,23 +64,27 @@ nav ul li a:hover
     box-shadow: 10px 10px 10px;
 }
 
+
+
+/**********ABOUT ME********/
 .Aboutme{
-    position:absolute;
-    top :15%;
-    left: 10%;
+    position:relative;
+    top :20%;
+    left: 4%;
     right: 40%;
     color:#fefefe;
     width: fit-content;
+    height: fit-content;
   
 }
 .Aboutme h2{
     
     font-size: 45px;
     letter-spacing: 2.5px;
-    margin:50px;
+    margin-top:100px;
     color: rgb(255, 255, 255);
     top :5%;
-    left: 10%;
+  
     bottom: 55px;
     text-align: center;
     
@@ -94,11 +98,42 @@ nav ul li a:hover
     color: rgb(255, 255, 255);
     background-color: rgb(0, 0, 0);
 }
+
+
+/*****WORK***********/
+#portfolio{
+    padding: 30px 0;
+}
+.subtitle{
+    font-size: 45px;
+    letter-spacing: 2.5px;
+    margin:0px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+.portfolio-items div{
+    padding: 100px;
+    display: grid;
+    grid-template-columns: repeat(2,minmax(500px,1fr));
+    grid-gap: 4px;
+    grid-auto-flow: column;
+    place-items: center;
+  
+}
+.portfolio h1{
+    margin: auto;
+}
+.portfolio div h2{
+    align-items: center;
+
+}
+
+/****************MAIN*************/
 .main{
     width: 1000px;
     max-width: 95%;
     margin-left: 35px;
-    display: inline-flex;
+    display: flex;
     
     justify-content: space-around;
 }
@@ -108,10 +143,13 @@ nav ul li a:hover
     display: inline;
     margin-left: 50px;
     max-width: 50%;
-    width: 50%;
+    width: fit-content;
     justify-content: space-around;
+    margin-top: 6%;
+    
     
 }
+
 .main img{
     display: flex;
     
@@ -120,3 +158,8 @@ nav ul li a:hover
    
 }
 
+
+.contact{
+    color: #fefefe;
+    
+}
